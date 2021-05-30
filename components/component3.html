@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Aurora Shao Design System - Button</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheet-->
+	  <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link  rel="stylesheet"  href="../css/prism.css"/>
+
+    <!-- Embedded Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/ntm8dam.css">
+
+    <!-- Favicon Links-->
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  </head>
+  <body>
+
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="toggle-btn">
+              <span class="sr-only">Toggle Menu</span>
+                    <div id="nav-icon1" >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+               </button>
+          </div>
+		<div class="p-4 pt-6">
+		  <h1><a href="../index.html" class="logo"><img src="../img/Logo_Color.png" width="48px" alt="my logo">&nbsp Aurora Shao</a></h1>
+
+	       <ul class="list-unstyled components">
+
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+
+			            <ul class="collapse list-unstyled" id="homeSubmenu">
+		                <li>
+		                    <a href="../foundation/type.html">Typography</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/color.html">Color</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/logo.html">Logo</a>
+		                </li>
+			            </ul>
+	          </li>
+
+	          <li>
+              <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+              <ul class="collapse.show list-unstyled" id="ComponentsSubmenu">
+               <li>
+                    <a href="component1.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="component2.html">Footer</a>
+                </li>
+                <li>
+                    <a href="#">Button</a>
+                </li>
+              </ul>
+	          </li>
+
+	          <li>
+              <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+              <ul class="collapse list-unstyled" id="PatternsSubmenu">
+                 <li>
+                    <a href="../patterns/pattern1.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="../patterns/pattern2.html">Project Page</a>
+                </li>
+
+              </ul>
+	          </li>
+
+
+	        </ul>
+
+
+
+
+	      </div>
+    	</nav>
+
+      <!-- Page Content  -->
+    <div class = "container">
+        <div class = "row p-5 pt-6">
+          <div id="content">
+
+            <h2>Button</h2>
+            <p>Button directs the users to a new page or the prototype.It is placed at the project overview section of each case study.</p>
+
+            <h4>Example</h4>
+            <p>The example is the same size across all devices. Hover to examine its hover effect.</p>
+            <button type="button" class="btn btn-primary btn-new shadow">View Prototype</button>
+            <div class="lowerpadding-40"></div>
+
+            <h4>Accessibility</h4>
+            <p>
+              In most cases, <code>&ltbutton&gt</code> should be used for clickable areas fpr the greatest clarity.
+              <ul>
+                <li>Avoid using <code>&ltdiv&gt</code> or <code>&ltimg&gt</code> tags to create buttons. Screen readers generally won’t know that either is a usable button.</li>
+                <li>If must use a different HTML element to do the same functionality as a button, use the <code>aria role='button'</code> to let screen readers know the area is clickable.</li>
+                <li>Consider using a input for a button(especially used in forms) as long as it has a <code>type='button'</code>.</li>
+              </ul>
+            </p>
+
+            <h4>Usage</h4>
+            <p>Buttons should be used in a consistent style across the website.
+              <ul>
+                <li>Make sure there is a hover effect.</li>
+                <li>Make sure the user understand where the button links to.</li>
+                <li>Include a shadow to indicate the button is an active one.</li>
+              </ul>
+            </p>
+
+            <!-- Code example - this is what the prism.js and css are for added in this page - replace: all '<' with &lt; and  '>' with &gt; and all quotes with &quot; -->
+            <h4>Code</h4>
+      <pre class="language-markup">
+        <code>
+          &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+        </code>
+      </pre><!-- Code example -->
+
+
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+</div>
+
+    <script src="../js/prism.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

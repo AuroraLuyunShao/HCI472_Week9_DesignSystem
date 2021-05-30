@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Aurora Shao Design System - Footer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheet-->
+	  <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link  rel="stylesheet"  href="../css/prism.css"/>
+
+    <!-- Embedded Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/ntm8dam.css">
+
+    <!-- Favicon Links-->
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+  </head>
+  <body>
+
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="toggle-btn">
+              <span class="sr-only">Toggle Menu</span>
+                    <div id="nav-icon1" >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+               </button>
+          </div>
+		<div class="p-4 pt-6">
+		  <h1><a href="../index.html" class="logo"><img src="../img/Logo_Color.png" width="48px" alt="my logo">&nbsp Aurora Shao</a></h1>
+
+	       <ul class="list-unstyled components">
+
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+
+			            <ul class="collapse list-unstyled" id="homeSubmenu">
+		                <li>
+		                    <a href="../foundation/type.html">Typography</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/color.html">Color</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/logo.html">Logo</a>
+		                </li>
+			            </ul>
+	          </li>
+
+	          <li>
+              <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+              <ul class="collapse.show list-unstyled" id="ComponentsSubmenu">
+               <li>
+                    <a href="component1.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="#">Footer</a>
+                </li>
+                <li>
+                    <a href="component3.html">Button</a>
+                </li>
+              </ul>
+	          </li>
+
+	          <li>
+              <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+              <ul class="collapse list-unstyled" id="PatternsSubmenu">
+                 <li>
+                    <a href="../patterns/pattern1.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="../patterns/pattern2.html">Project Page</a>
+                </li>
+
+              </ul>
+	          </li>
+
+
+	        </ul>
+
+
+
+
+	      </div>
+    	</nav>
+
+      <!-- Page Content  -->
+    <div class = "container">
+        <div class = "row p-5 pt-6">
+          <div id="content">
+
+            <h2>Footer</h2>
+            <p>Footer provides additional social media information. It is placed at the bottom through the website and is responsive to screen size.</p>
+
+            <h4>Example</h4>
+            <p>The example is responsive. Adjust the web browser window to demonstrate the responsive behaviors.</p>
+
+            <footer class="footer mt-auto">
+              <div class="container">
+                <div class="d-flex justify-content-center">
+                  <div class="footer-item align-middle"><img src="../img/linkedin.png" class="shadow" alt="LinkedIn Icon"></div>
+                  <div class="footer-item align-middle"><img src="../img/ins.png" class="shadow" alt="Instagram Icon"></div>
+                  <div class="footer-item align-middle"><img src="../img/dribbble.png" class="shadow" alt="Dribbble Icon"></div>
+                </div>
+              </div>
+            </footer>
+
+            <div class="lowerpadding-40"></div>
+
+            <h4>Accessibility</h4>
+            <p>
+              Footer usually includes the information repeated at the end of every page of a website.
+              <ul>
+                <li>Put the links within an unordered list structure so that a screen reader will read out how many things are in the list to give visually impaired users the most information possible about the contents of the navigation.</li>
+                <li>Use the semantic <code>&ltfooter&gt</code> tag around the unordered list and links with an ARIA <code>role='contentinfo'</code> attribute.</li>
+                <li>Optionally, attach an <code>aria-label</code> attribute to footer to give users of assistive technology as much information as possible.</li>
+              </ul>
+            </p>
+
+            <h4>Usage</h4>
+            <p>Footers stick at the bottom of each page across the website.
+              <ul>
+                <li>Use a dark background to differentiate the footer from the main content.</li>
+                <li>Make sure the footer sticks at the bottom regardless of the amount of the content.</li>
+                <li>Include a shadow to indicate each icon is an active one.</li>
+              </ul>
+            </p>
+
+            <!-- Code example - this is what the prism.js and css are for added in this page - replace: all '<' with &lt; and  '>' with &gt; and all quotes with &quot; -->
+            <h4>Code</h4>
+      <pre class="language-markup"><code>
+        &ltfooter class="footer mt-auto"&gt
+          &ltdiv class="container"&gt
+            &ltdiv class="d-flex justify-content-center"&gt
+              &ltdiv class="footer-item align-middle"&gt&ltimg src="../img/linkedin.png class="shadow" alt="LinkedIn Icon&gt&lt/div&gt
+              &ltdiv class="footer-item align-middle"&gt&ltimg src="../img/ins.png class="shadow" alt="Instagram Icon"&gt&lt/div&gt
+              &ltdiv class="footer-item align-middle"&gt&ltimg src="../img/dribbble.png class="shadow" alt="Dribbble Icon"&gt&lt/div&gt
+            &lt/div&gt
+          &lt/div&gt
+        &lt/footer&gt
+          </code>
+      </pre><!-- Code example -->
+
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+</div>
+
+    <script src="../js/prism.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

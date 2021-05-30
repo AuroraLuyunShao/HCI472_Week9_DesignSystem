@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Aurora Shao Design System - Navigation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Stylesheet-->
+	  <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link  rel="stylesheet"  href="../css/prism.css"/>
+
+    <!-- Embedded Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/ntm8dam.css">
+
+    <!-- Favicon Links-->
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  </head>
+  <body>
+
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="toggle-btn">
+              <span class="sr-only">Toggle Menu</span>
+                    <div id="nav-icon1" >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+               </button>
+          </div>
+		<div class="p-4 pt-6">
+		  <h1><a href="../index.html" class="logo"><img src="../img/Logo_Color.png" width="48px" alt="my logo">&nbsp Aurora Shao</a></h1>
+
+	       <ul class="list-unstyled components">
+
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+
+			            <ul class="collapse list-unstyled" id="homeSubmenu">
+		                <li>
+		                    <a href="../foundation/type.html">Typography</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/color.html">Color</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/logo.html">Logo</a>
+		                </li>
+			            </ul>
+	          </li>
+
+	          <li>
+              <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+              <ul class="collapse.show list-unstyled" id="ComponentsSubmenu">
+               <li>
+                    <a href="#">Navigation</a>
+                </li>
+                <li>
+                    <a href="component2.html">Footer</a>
+                </li>
+                <li>
+                    <a href="component3.html">Button</a>
+                </li>
+              </ul>
+	          </li>
+
+	          <li>
+              <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+              <ul class="collapse list-unstyled" id="PatternsSubmenu">
+                 <li>
+                    <a href="../patterns/pattern1.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="../patterns/pattern2.html">Project Page</a>
+                </li>
+
+              </ul>
+	          </li>
+
+
+	        </ul>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div class = "container">
+          <div class = "row p-5 pt-6">
+            <div id="content">
+
+              <h2>Navigation</h2>
+              <p>The Nagivation Bar is an essential component in the design system. It sticks at the top through the website and is responsive to screen size.</p>
+
+              <h4>Example</h4>
+              <p>The example is responsive. Adjust the web browser window to demonstrate the responsive behaviors.</p>
+
+              <nav class="navbar navbar-expand-lg navbar-light navbar-new shadow">
+                <div class="container-fluid">
+                  <a class="navbar-brand navbar-brand-new" href="#" style="color: #9D9D9D"><img src="../img/Logo_Color.png" alt="Personal Logo" width="48px">&nbsp &nbsp AURORA SHAO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="text-align:right;">RESUME</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <div class="lowerpadding-40"></div>
+
+              <h4>Accessibility</h4>
+              <p>
+                Navigation is the way users find and access the different pages available. Therefore, it is imperative that navigation is accessible.
+                <ul>
+                  <li>Put the links within an unordered list structure so that a screen reader will read out how many things are in the list to give visually impaired users the most information possible about the contents of the navigation.</li>
+                  <li>Use the semantic <code>&ltnav&gt</code> tag around the unordered list and links with an ARIA <code>role='navigation'</code> attribute.</li>
+                  <li>Optionally, attach an <code>aria-label</code> attribute to navigation to give users of assistive technology as much information as possible.</li>
+                </ul>
+              </p>
+
+              <h4>Usage and Best Practices</h4>
+              <p>The navigation sticks at the top through the website for users to access different pages.
+                <ul>
+                  <li>Make sure the navigation is responsive.</li>
+                  <li>From the left to the right, order the nagivation items based on their importance.</li>
+                  <li>Include a shadow to differentiate from main content.</li>
+                  <li>Link the icon and name to the home page.</li>
+                </ul>
+              </p>
+
+              <!-- Code example - this is what the prism.js and css are for added in this page - replace: all '<' with &lt; and  '>' with &gt; and all quotes with &quot; -->
+              <h4>Code</h4>
+        <pre class="language-markup"><code>
+          &ltnav class="navbar navbar-expand-lg navbar-light navbar-new shadow"&gt
+            &ltdiv class="container-fluid"&gt
+              &lta class="navbar-brand navbar-brand-new" href="#"&gt&ltimg src="../img/Logo_Color.png" alt="Personal Logo" width="48px"&gtAURORA SHAO&lt/a&gt
+                &ltbutton class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"&gt
+                  &ltspan class="navbar-toggler-icon"&gt&lt/span&gt
+                &lt/button&gt
+            &ltdiv class="collapse navbar-collapse" id="navbarNavDropdown"&gt
+              &ltul class="navbar-nav ml-auto"&gt
+                &ltli class="nav-item"&gt
+                  &lta class="nav-link active" aria-current="page" href="#">WORK&lt/a&gt
+                &lt/li&gt
+                &ltli class="nav-item"&gt
+                  &lta class="nav-link" href="#"&gtABOUT&lt/a&gt
+                &lt/li&gt
+                &ltli class="nav-item"&gt
+                  &lta class="nav-link" href="#" style="text-align:right;"&gtRESUME&lt/a&gt
+                &lt/li&gt
+              &lt/ul&gt
+            &lt/div&gt
+          &lt/div&gt
+        &lt/nav&gt
+            </code>
+        </pre><!-- Code example -->
+
+
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+</div>
+      <script src="../js/prism.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
